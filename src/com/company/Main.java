@@ -139,7 +139,7 @@ public class Main {
         String brugerValg = sc.nextLine();
         brugerValg = brugerValg.toUpperCase(Locale.ROOT);
 
-        if (brugerValg == "S"){
+        if (brugerValg == "Ka"){
             obj.krypterTekst();
         } else{
             obj.dekrypterTekst();
