@@ -137,13 +137,16 @@ public class Main {
         System.out.println("Vil du kryptere eller dekryptere en tekst?");
         System.out.println("Skriv K eller D");
         String brugerValg = sc.nextLine();
+        brugerValg =
         brugerValg = brugerValg.toUpperCase(Locale.ROOT);
 
-        if (brugerValg == "Ka"){
-            obj.krypterTekst();
-        } else{
-            obj.dekrypterTekst();
-        }
+            if (brugerValg.equals("K")) {
+                obj.krypterTekst();
+            } else if (brugerValg.equals("D")) {
+                obj.dekrypterTekst();
+            } else {
+                System.out.println("Ikke gyldigt valg");
+            }
 
         // Få brugeren til at indtaste tekst som skal krypteres
 
